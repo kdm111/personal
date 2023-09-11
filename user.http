@@ -1,0 +1,34 @@
+@server = http://localhost:8000
+
+###
+GET {{server}}
+
+###
+GET {{server}}/register
+
+###
+GET {{server}}/login
+
+###
+GET {{server}}/users
+
+### 회원가입 요청
+POST {{server}}/user/register
+Content-Type: application/json; charset=UTF-8
+
+{
+
+  "user_id": "mo123",
+  "password": "1234",
+  "user_name": "moss"
+}
+
+### 로그인 요청
+POST {{server}}/user/login
+Content-Type: application/json; charset=UTF-8
+
+{
+  "user_id": "orange",
+  "password": "1234"
+}
+

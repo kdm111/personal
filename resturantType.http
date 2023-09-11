@@ -1,0 +1,15 @@
+@server = http://localhost:8000
+
+### 레스토랑 타입에 맞는 데이터 가져오기
+GET {{server}}/restaurant_type/korean
+
+
+
+
+
+### 메뉴 검색 예시
+http://localhost:8000/menu/search/아메리카노
+
+
+#레스토랑에 맞는 메뉴 가져오기
+http://localhost:8000/menu/restaurant/4

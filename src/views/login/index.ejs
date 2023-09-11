@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../common/commonHead.ejs') %>
+    <title>MealSac | 로그인</title>
+    <link rel="stylesheet" href="/static/css/login.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="/"><img id="logo1" src="/static/img/logo1.png" alt="밀싹" /></a>
+    </div>
+    <div class="container">
+      <h1>로그인</h1>
+      <p id="msg">환영합니다!</p>
+      <br />
+      <form name="login">
+        <div class="box">
+          <input
+            type="text"
+            name="inputId"
+            id="inputId"
+            placeholder="아이디를 입력하세요"
+            required
+          />
+        </div>
+        <div class="box">
+          <input
+            type="password"
+            name="inputPw"
+            id="inputPw"
+            placeholder="비밀번호를 입력하세요"
+          />
+          <br />
+        </div>
+        <p id="loginMsg"></p>
+
+        <br /><br />
+        <button type="button" class="doLogin" onclick="doLogin()">
+          로그인
+        </button>
+      </form>
+      <div class="already">
+        <a href="/searchUser">아이디・비밀번호 찾기</a>
+        <a href="/register">회원가입</a>
+      </div>
+    </div>
+    <script src="../../static/js/login.js"></script>
+  </body>
+</html>

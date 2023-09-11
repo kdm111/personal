@@ -1,0 +1,242 @@
+/* 전체 페이지의 기본 스타일 */
+* {
+  font-family: 'Gugi', cursive;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px 20px 60px;
+}
+
+.header img {
+  height: 40px;
+}
+
+.login {
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  height: 30px;
+  width: 100px;
+  font-size: medium;
+}
+.logout {
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  height: 30px;
+  width: 100px;
+  font-size: medium;
+}
+
+.register {
+  background-color: #a5e467;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  height: 30px;
+  width: 100px;
+  font-size: medium;
+}
+
+.mypage {
+  background-color: #a5e467;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  height: 30px;
+  width: 100px;
+  font-size: medium;
+}
+
+/* 메뉴 아이콘들을 중앙 정렬하고 각 아이템 간격 조절 */
+.menuIcons {
+  justify-content: space-between;
+  background-color: #a5e467;
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+  height: 20vh;
+}
+.menuIcons img {
+  width: 60px; /* 아이콘의 폭 설정 */
+  height: 60px; /* 아이콘의 높이 설정 */
+}
+.menuIcons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menuIcons p {
+  margin: 16px 0 0 0;
+}
+
+h3 {
+  border-radius: 30px;
+  border: none;
+  background: #a5e467;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  height: 20px;
+  width: 70px;
+  font-size: medium;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column; /* h3 태그를 위로 올립니다. */
+  padding: 0 60px;
+  align-items: center;
+  position: relative;
+}
+
+.restaurants h3 {
+  align-self: flex-start; /* h3 태그를 왼쪽 정렬 */
+  margin-bottom: 20px; /* h3 태그 아래에 간격 추가 */
+}
+/* 카드 가로 정렬 */
+.cardMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-container {
+  flex: 0 0 25%; /* 4개의 카드를 보여주기 위해 25%의 너비로 설정 */
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1;
+  width: 30px; /* 너비를 조정했습니다. */
+  height: 30px; /* 높이를 추가했습니다. */
+}
+
+.slide-btn.left {
+  left: 0;
+}
+
+.slide-btn.right {
+  right: 0;
+}
+
+/* Overflow hidden style for sliding container */
+.slide-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  flex-basis: calc(25% - 20px);
+  margin: 0 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* 테두리 둥글게 */
+  background-color: #f7f7f7; /* 카드 배경색 */
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurantName {
+  text-align: left;
+}
+
+.categoryRating {
+  display: flex;
+  justify-content: space-between; /* 카테고리와 평점 사이의 간격을 최대로 설정 */
+  align-items: center;
+}
+
+.category,
+.rating {
+  margin: 0; /* 기본 여백 제거 */
+  font-size: small; /* 글꼴 크기를 조금 작게 설정 */
+}
+
+.category {
+  text-align: left;
+}
+
+.rating {
+  text-align: end;
+}
+
+.ratingReview {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.rating,
+.review {
+  margin: 0; /* 만약 마진 때문에 간격이 크면 조정하세요. */
+}
+
+.card img {
+  width: 100%; /* 카드의 너비에 맞게 이미지 크기 조절 */
+  height: 60%;
+  border-radius: 10px; /* 이미지에 둥근 모서리 추가 (선택사항) */
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.rating img {
+  width: 15px;
+  height: 15px;
+}
+
+.review img {
+  width: 15px;
+  height: 15px;
+}
+
+footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  height: 220px;
+}
+
+footer p .contact {
+  font-size: large;
+}
+
+footer p {
+  font-size: small;
+}

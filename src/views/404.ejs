@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../views/common/commonHead.ejs') %>
+    <title>ERROR</title>
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+        background-image: url('/static/img/404.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        text-align: center;
+        background-size: 35%;
+      }
+
+      h1 {
+        font-size: 80px;
+        font-weight: 900;
+        margin: 150px 0px 0px 0px;
+      }
+
+      h2 {
+        font-size: 60px;
+        font-weight: 500;
+        margin: 0px 0px 30px 0px;
+      }
+
+      button {
+        width: 180px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #a5e467;
+        background: #a5e467;
+        margin: 5px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 5px;
+      }
+
+      div, body {
+        background-color:transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>404 ERROR</h1>
+      <h2>Page Not Found</h2>
+      <br /><br />
+      <p>죄송합니다. 페이지를 찾을 수 없습니다</p>
+      <p>존재하지 않는 주소를 입력하셨거나,</p>
+      <p>요청하신 페이지의 주소가 변경, 삭제되어 찾을 수 없습니다.</p>
+      <br /><br /><br /><br /><br />
+      <button type="button" onclick="document.location.href='/'">
+        메인으로</button
+      ><br />
+      <button type="button" onClick="history.back()">이전으로</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* header css */
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px 20px 60px;
+}
+
+.header img {
+  height: 40px;
+}
+
+/* 폰트 */
+* {
+  font-family: Inter;
+}
+
+/* footer css */
+footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  height: 220px;
+}
+
+footer p .contact {
+  font-size: large;
+}
+
+footer p {
+  font-size: small;
+}

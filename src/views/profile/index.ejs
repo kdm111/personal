@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../common/commonHead.ejs') %>
+    <title>MealSac | 회원정보</title>
+    <link rel="stylesheet" href="/static/css/profile.css" />
+</head>
+<body>
+    <%- include('../common/header.ejs') %>
+    <div class="container">
+        <h1>회원정보</h1>
+        <br /><br /><input type="hidden" id="id" value="<%= data.id %>" />
+        <form name="profile">
+          <label for="userId">아이디</label> <br />
+          <div class="box">
+            <input
+              type="text"
+              name="userId"
+              value="<%= data.user_id %>"
+              readonly
+            />
+            </div>
+           
+          <br /><br />
+          <label for="userPw">비밀번호</label> <br />
+          <div class="box">
+            <input
+              type="password"
+              name="userPw"
+              id="userPw"
+              placeholder="8자 이상 영문과 숫자를 혼합"
+              required
+            />
+            <br />
+          </div>
+          <br />
+          <div class="box confirmPw">
+            <input
+              type="password"
+              name="confirmPw"
+              id="confirmPw"
+              placeholder="비밀번호를 한 번 더 입력하세요."
+              required
+            />
+          </div>
+          <p id="pwMsg"></p>
+  
+          <br /><br />
+          <label for="userName">닉네임</label><br />
+          <div class="box">
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              value="<%= data.user_name %>"
+              required
+            />
+            <button type="button" class="overlap" onclick="overlapName()">
+              중복 확인
+            </button>
+          </div>
+          <p id="nameMsg"></p>
+          <br /><br /><br />
+  
+          <button type="submit" class="edit" onclick="edit()">
+            수정
+          </button>
+          <button type="submit" class="destroy" onclick="destroy()">
+            탈퇴
+          </button>
+          
+        </form>
+        <script src="../../static/js/profile.js"></script>
+</body>
+</html>

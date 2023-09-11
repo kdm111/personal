@@ -1,0 +1,9 @@
+@server = http://localhost:8000
+
+###
+POST {{server}}/like
+
+{
+    user_id : 1,
+    restaurant_id : 1
+}

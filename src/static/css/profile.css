@@ -1,0 +1,89 @@
+#logo1 {
+  width: 44px;
+  height: 47px;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.container div {
+  width: 100%;
+}
+
+input {
+  border: none;
+  outline: none;
+  margin: 13px;
+  font-size: 15px;
+}
+
+#inputPw,
+#confirmPw {
+  width: 90%;
+}
+
+.box {
+  position: relative;
+  width: 362px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #989898;
+}
+
+.overlap {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto 0;
+  border-radius: 3px;
+}
+
+.overlap {
+  border-radius: 9px;
+  border: 1px solid #a5e467;
+  background: #a5e467;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+#msg {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.edit,
+.destroy {
+  border-radius: 15px;
+  border: 1px solid #a5e467;
+  background: #a5e467;
+  font-size: 25px;
+  font-weight: 500;
+  width: 376px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #989898;
+}
+
+#pwMsg,
+#nameMsg {
+  color: red;
+  font-size: 12px;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "mealsac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "vercel deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sesac-project-E/mealsac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sesac-project-E/mealsac/issues"
+  },
+  "homepage": "https://github.com/sesac-project-E/mealsac#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
